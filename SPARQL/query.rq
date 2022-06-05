@@ -1,11 +1,12 @@
 PREFIX id: <http://learningsparql.com/ns/addressbook#>
 PREFIX item: <http://learningsparql.com/ns/data#>
 
-SELECT ?heroName ?str ?strmax ?agi ?agimax ?int ?intmax ?winRate ?pickRate ?kdaRate
+SELECT ?heroName ?main ?str ?strmax ?agi ?agimax ?int ?intmax ?winRate ?pickRate ?kdaRate
 WHERE
 { 
     ?items
     	item:heroName       ?heroName ;
+		item:main			?main;
     	item:str            ?str;
     	item:strMax         ?strmax;
    		item:agi            ?agi;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lapbook - Home</title>
+    <title>Dota heroes table</title>
     
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -28,11 +28,12 @@
             PREFIX id: <http://learningsparql.com/ns/addressbook#>
             PREFIX item: <http://learningsparql.com/ns/data#>
 
-            SELECT ?heroName ?str ?strmax ?agi ?agimax ?int ?intmax ?winRate ?pickRate ?kdaRate
+            SELECT ?heroName ?main ?str ?strmax ?agi ?agimax ?int ?intmax ?winRate ?pickRate ?kdaRate
             WHERE
             { 
                 ?items
                     item:heroName       ?heroName ;
+                    item:main			?main;
                     item:str            ?str;
                     item:strMax         ?strmax;
                     item:agi            ?agi;
@@ -43,7 +44,8 @@
                     item:pickRate       ?pickRate;
                     item:kdaRate        ?kdaRate.
                     FILTER 
-                        (regex (?heroName, '$searchInput', 'i') 
+                        (regex (?heroName, '$searchInput', 'i')
+                        || regex (?main, '$searchInput', 'i') 
                         || regex (?str, '$searchInput', 'i') 
                         || regex (?strmax, '$searchInput', 'i') 
                         || regex (?agi, '$searchInput', 'i') 
@@ -63,11 +65,12 @@
             PREFIX id: <http://learningsparql.com/ns/addressbook#>
             PREFIX item: <http://learningsparql.com/ns/data#>
             
-            SELECT ?heroName ?str ?strmax ?agi ?agimax ?int ?intmax ?winRate ?pickRate ?kdaRate
+            SELECT ?heroName ?main ?str ?strmax ?agi ?agimax ?int ?intmax ?winRate ?pickRate ?kdaRate
             WHERE
             { 
                 ?items
                     item:heroName       ?heroName ;
+                    item:main			?main;
                     item:str            ?str;
                     item:strMax         ?strmax;
                     item:agi            ?agi;
@@ -119,25 +122,28 @@
         ?>
         <h4>Data attribut hero pada game dota, beserta win rate, pick rate, kda ratio</h4>
         <table id="data" class="table table-bordered table-hover text-center table-responsive">
-        <i>Kolom data dapat di click untuk sortir berdasarkan kolom yang diinginkan</i>
+        <i>Kolom data dapat di click untuk sortir berdasarkan kolom yang diinginkan</i><br>
+        <i>at 30 merupakan stat tersebut pada saat hero mencapai level max (30)</i>
             <thead class="table-dark align-middle">
                 <tr>
                     <th onclick="sortTable(0)">Nama hero</th>
-                    <th onclick="sortTable(1)">STR</th>
-                    <th onclick="sortTable(2)" >STR at 30</th>
-                    <th onclick="sortTable(3)" >AGI</th>
-                    <th onclick="sortTable(4)" >AGI at 30</th>
-                    <th onclick="sortTable(5)" >INT</th>
-                    <th onclick="sortTable(6)" >INT at 30</th>
-                    <th onclick="sortTable(7)" >Win Rate</th>
-                    <th onclick="sortTable(8)" >Pick Rate</th>
-                    <th onclick="sortTable(9)" >KDA Ratio</th>
+                    <th onclick="sortTable(1)">Atribut utama</th>
+                    <th onclick="sortTable(2)">STR</th>
+                    <th onclick="sortTable(3)" >STR at 30</th>
+                    <th onclick="sortTable(4)" >AGI</th>
+                    <th onclick="sortTable(5)" >AGI at 30</th>
+                    <th onclick="sortTable(6)" >INT</th>
+                    <th onclick="sortTable(7)" >INT at 30</th>
+                    <th onclick="sortTable(8)" >Win Rate(%)</th>
+                    <th onclick="sortTable(9)" >Pick Rate(%)</th>
+                    <th onclick="sortTable(10)" >KDA Ratio</th>
                 </tr>
             </thead>
             <tbody class="align-middle">
                 <?php $i = 0; ?>
                 <?php foreach ($data as $data) : ?>
                     <td><?= $data['heroName'] ?></td>
+                    <td><?= $data['main'] ?></td>
                     <td><?= $data['str'] ?></td>
                     <td><?= $data['strmax'] ?></td>
                     <td><?= $data['agi'] ?></td>
@@ -167,7 +173,7 @@
                 x = rows[i].getElementsByTagName("TD")[n];
                 y = rows[i + 1].getElementsByTagName("TD")[n];
                 if (dir == "asc") {
-                    if (n == 0) { //n == 0 karena data berupa text, bukan angka
+                    if (n < 2) { //n == 0 karena data berupa text, bukan angka
                         if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
                         shouldSwitch = true;
                         break;
@@ -177,7 +183,7 @@
                         break;
                     } 
                 } else if (dir == "desc") {
-                    if (n == 0) {
+                    if (n < 2) {
                         if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
                             shouldSwitch = true;
                             break;

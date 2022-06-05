@@ -3,6 +3,7 @@
 
 id:A001
     item:heroName       "Abaddon" ;
+    item:main           "STR";
     item:str            "22";
     item:strMax         "97";
     item:agi            "23";
@@ -15,6 +16,7 @@ id:A001
 
 id:A002
     item:heroName       "Alchemist" ;
+    item:main           "STR";
     item:str            "25";
     item:strMax         "109";
     item:agi            "22";
@@ -27,6 +29,7 @@ id:A002
     
 id:A003
     item:heroName       "Nature's Prophet" ;
+    item:main           "INT";
     item:str            "21";
     item:strMax         "96";
     item:agi            "22";
@@ -39,6 +42,7 @@ id:A003
 
 id:A004
     item:heroName       "Spectre" ;
+    item:main           "AGI";
     item:str            "23";
     item:strMax         "95";
     item:agi            "25";
@@ -51,6 +55,7 @@ id:A004
 
 id:A005
     item:heroName       "Zeus" ;
+    item:main           "INT";
     item:str            "19";
     item:strMax         "80";
     item:agi            "11";
@@ -63,6 +68,7 @@ id:A005
 
 id:A006
     item:heroName       "Riki" ;
+    item:main           "AGI";
     item:str            "18";
     item:strMax         "93";
     item:agi            "18";
@@ -75,6 +81,7 @@ id:A006
 
 id:A007
     item:heroName       "Axe" ;
+    item:main           "STR";
     item:str            "25";
     item:strMax         "123";
     item:agi            "20";
@@ -87,6 +94,7 @@ id:A007
 
 id:A008
     item:heroName       "Juggernaut" ;
+    item:main           "AGI";
     item:str            "20";
     item:strMax         "83";
     item:agi            "34";
@@ -99,6 +107,7 @@ id:A008
 
 id:A009
     item:heroName       "Invoker" ;
+    item:main           "INT";
     item:str            "18";
     item:strMax         "88";
     item:agi            "14";
@@ -108,3 +117,81 @@ id:A009
     item:winRate        "48.29";
     item:pickRate       "16.88";
     item:kdaRate        "3.27".
+    
+id:A010
+    item:heroName       "Marci" ;
+    item:main           "STR";
+    item:str            "23";
+    item:strMax         "118";
+    item:agi            "20";
+    item:agiMax         "89";
+    item:int            "19";
+    item:intMax         "74";
+    item:winRate        "49.27";
+    item:pickRate       "5.11";
+    item:kdaRate        "2.43".
+    
+id:A011
+    item:heroName       "Primal Beast" ;
+    item:main           "STR";
+    item:str            "26";
+    item:strMax         "150";
+    item:agi            "15";
+    item:agiMax         "44";
+    item:int            "16";
+    item:intMax         "56";
+    item:winRate        "45.95";
+    item:pickRate       "10.97";
+    item:kdaRate        "2.49".
+    
+id:A012
+    item:heroName       "Enigma" ;
+    item:main           "INT";
+    item:str            "21";
+    item:strMax         "93";
+    item:agi            "14";
+    item:agiMax         "43";
+    item:int            "19";
+    item:intMax         "123";
+    item:winRate        "51.23";
+    item:pickRate       "6.10";
+    item:kdaRate        "2.33".
+    
+id:A013
+    item:heroName       "Puck" ;
+    item:main           "INT";
+    item:str            "17";
+    item:strMax         "86";
+    item:agi            "22";
+    item:agiMax         "94";
+    item:int            "23";
+    item:intMax         "124";
+    item:winRate        "48.89";
+    item:pickRate       "7.58";
+    item:kdaRate        "3.56".
+    
+id:A014
+    item:heroName       "Meepo" ;
+    item:main           "AGI";
+    item:str            "24";
+    item:strMax         "88";
+    item:agi            "17";
+    item:agiMax         "80";
+    item:int            "20";
+    item:intMax         "75";
+    item:winRate        "53.88";
+    item:pickRate       "2.21";
+    item:kdaRate        "2.7".
+    
+id:A015
+    item:heroName       "Terrorblade" ;
+    item:main           "AGI";
+    item:str            "16";
+    item:strMax         "74";
+    item:agi            "22";
+    item:agiMax         "138";
+    item:int            "19";
+    item:intMax         "65.4";
+    item:winRate        "45.27";
+    item:pickRate       "2.47";
+    item:kdaRate        "2.49".
