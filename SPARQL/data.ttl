@@ -1,0 +1,110 @@
+@prefix id: <http://learningsparql.com/ns/addressbook#>.
+@prefix item:  <http://learningsparql.com/ns/data#>.
+
+id:A001
+    item:heroName       "Abaddon" ;
+    item:str            "22";
+    item:strMax         "97";
+    item:agi            "23";
+    item:agiMax         "66";
+    item:int            "18";
+    item:intMax         "76";
+    item:winRate        "50.86";
+    item:pickRate       "3.81";
+    item:kdaRate        "2.77".
+
+id:A002
+    item:heroName       "Alchemist" ;
+    item:str            "25";
+    item:strMax         "109";
+    item:agi            "22";
+    item:agiMax         "65";
+    item:int            "25";
+    item:intMax         "77";
+    item:winRate        "49.77";
+    item:pickRate       "4.31";
+    item:kdaRate        "2.81".
+    
+id:A003
+    item:heroName       "Nature's Prophet" ;
+    item:str            "21";
+    item:strMax         "96";
+    item:agi            "22";
+    item:agiMax         "126";
+    item:int            "23";
+    item:intMax         "130";
+    item:winRate        "44.79";
+    item:pickRate       "8.94";
+    item:kdaRate        "2.09".
+
+id:A004
+    item:heroName       "Spectre" ;
+    item:str            "23";
+    item:strMax         "95";
+    item:agi            "25";
+    item:agiMax         "86";
+    item:int            "16";
+    item:intMax         "71";
+    item:winRate        "53.45";
+    item:pickRate       "7.67";
+    item:kdaRate        "4.37".
+
+id:A005
+    item:heroName       "Zeus" ;
+    item:str            "19";
+    item:strMax         "80";
+    item:agi            "11";
+    item:agiMax         "46";
+    item:int            "22";
+    item:intMax         "118";
+    item:winRate        "51.96";
+    item:pickRate       "11.00";
+    item:kdaRate        "4.08".
+
+id:A006
+    item:heroName       "Riki" ;
+    item:str            "18";
+    item:strMax         "93";
+    item:agi            "18";
+    item:agiMax         "59";
+    item:int            "14";
+    item:intMax         "58";
+    item:winRate        "52.43";
+    item:pickRate       "5.50";
+    item:kdaRate        "4.02".
+
+id:A007
+    item:heroName       "Axe" ;
+    item:str            "25";
+    item:strMax         "123";
+    item:agi            "20";
+    item:agiMax         "84";
+    item:int            "18";
+    item:intMax         "64";
+    item:winRate        "54.47";
+    item:pickRate       "15.18";
+    item:kdaRate        "2.57".
+
+id:A008
+    item:heroName       "Juggernaut" ;
+    item:str            "20";
+    item:strMax         "83";
+    item:agi            "34";
+    item:agiMax         "115";
+    item:int            "14";
+    item:intMax         "55";
+    item:winRate        "54.45";
+    item:pickRate       "20.59";
+    item:kdaRate        "3.32".
+
+id:A009
+    item:heroName       "Invoker" ;
+    item:str            "18";
+    item:strMax         "88";
+    item:agi            "14";
+    item:agiMax         "69";
+    item:int            "15";
+    item:intMax         "148";
+    item:winRate        "48.29";
+    item:pickRate       "16.88";
+    item:kdaRate        "3.27".

@@ -1,0 +1,19 @@
+PREFIX id: <http://learningsparql.com/ns/addressbook#>
+PREFIX item: <http://learningsparql.com/ns/data#>
+
+SELECT ?heroName ?str ?strmax ?agi ?agimax ?int ?intmax ?winRate ?pickRate ?kdaRate
+WHERE
+{ 
+    ?items
+    	item:heroName       ?heroName ;
+    	item:str            ?str;
+    	item:strMax         ?strmax;
+   		item:agi            ?agi;
+   		item:agiMax         ?agimax;
+   		item:int            ?int;
+    	item:intMax         ?intmax;
+    	item:winRate        ?winRate;
+    	item:pickRate       ?pickRate;
+    	item:kdaRate        ?kdaRate.
+}
+ORDER BY (?heroName)
