@@ -23,9 +23,9 @@ Aplikasi ini untuk melihat data pada hero-hero di game DotA 2, memiliki atribut 
 ## Installation
 
 1. Prepare and install all Requirements
-2. Clone Project on XAMPP folder (../xampp/htdocs)
+2. Clone Project on **XAMPP** folder (../xampp/htdocs)
     ```sh 
-        git clone https://github.com/saddamsevena/tugas-semantik
+        git clone https://github.com/Fadhill27/Semantic-Web-Project
     ```
 3. Run Apache Jena Fuseki on root folder
     ```sh
