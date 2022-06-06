@@ -99,9 +99,6 @@
                     <li class="nav-item px-2">
                         <a class="nav-link active text-white" aria-current="page" href="index.php">Home</a>
                     </li>
-                    <li class="nav-item px-2">
-                        <a class="nav-link text-white" href="about.php">About</a>
-                    </li>
                 </ul>
                 <form class="d-flex" role="search" action="" method="post" id="search" name="search">
                     <input class="form-control me-2" type="search" placeholder="Ketik keyword disini" aria-label="Search" name="search">
